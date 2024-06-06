@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+  font-family: "Cabin", sans-serif;
+  overflow-y: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+canvas {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 35rem;
+  height: 35rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+/* .koch-fractal-display {
+  display: none;
+} */
+
+/* .container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+} */
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.koch-iterate,
+.koch-reset,
+.koch-iterate-reverse {
+  width: 10rem;
+  height: 5rem;
+  background-color: #ff8c37;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px #888888;
+  transition: 0.2s;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.koch-iterate:hover,
+.koch-reset:hover,
+.koch-iterate-reverse:hover {
+  transform: scale(101%);
+}
+
+.koch-iterate:hover {
+  background-color: #ec7724;
+}
+
+.koch-reset:hover {
+  background-color: #db2b43;
+}
+
+.koch-iterate-reverse:hover {
+  width: 10rem;
+  height: 5rem;
+  background-color: #2f83c8;
+}
+
+.koch-reset {
+  width: 10rem;
+  height: 5rem;
+  background-color: #ec3750;
+}
+
+.koch-iterate-reverse {
+  width: 10rem;
+  height: 5rem;
+  background-color: #338eda;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.iteration-count {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.warning-text {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.tip-text {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}

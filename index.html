@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fractals</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="koch-fractal-display">
+      <h1>Koch Fractal Generator</h1>
+      <canvas class="drawing-canvas"></canvas>
+      <p class="iteration-count">Generation: 0</p>
+      <p class="warning-text">⚠️ Going beyond generation 5 may cause lag</p>
+      <div class="buttons-container">
+        <button class="koch-iterate">Forward</button>
+        <button class="koch-iterate-reverse">Back</button>
+        <button class="koch-reset">Reset</button>
+      </div>
+      <p class="tip-text">Resetting gives a randomized koch variation</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
