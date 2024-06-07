@@ -158,7 +158,7 @@ const drawKochCurve = function (width) {
 
   linesTracker.push([lines]);
 
-  console.log(kochIndex);
+  // console.log(kochIndex);
 
   // for (let i = 0; i < 1; i++) {
   //   generateKoch();
@@ -214,11 +214,11 @@ const generateKoch = function () {
   }
 
   linesTracker.push(new Array(newLines));
-  console.log("lines tracker", linesTracker);
+  // console.log("lines tracker", linesTracker);
 
   lines = newLines;
-  console.log(lines);
-  console.log(newLines);
+  // console.log(lines);
+  // console.log(newLines);
 };
 
 drawKochCurve(360);
