@@ -67,31 +67,28 @@ class Line {
     const unitDy = -dx / lengthAB;
 
     // Point C coordinates
-    // Koch curve can be generated upside-down if the signs are switched to negative
-    // const x_C = midX + height * unitDx;
-    // const y_C = midY + height * unitDy;
 
     // Allows us to generate random koch triangles
-    // const x_C_table = [
-    //   midX + height * unitDx,
-    //   midX + height * (dx > 0 ? unitDx : -unitDx),
-    //   midX + height * (dy > 0 ? unitDx : -unitDx),
-    //   midX + height * (-dy > 0 ? unitDx : -unitDx),
-    //   midX - height * (-dy < 0 ? unitDx : -unitDx),
-    // ];
-    // const x_Y_table = [
-    //   midY + height * unitDy,
-    //   midY + height * (dx > 0 ? unitDy : -unitDy),
-    //   midY + height * (dy > 0 ? unitDy : -unitDy),
-    //   midY + height * (-dy > 0 ? unitDy : -unitDy),
-    //   midY - height * (-dy < 0 ? unitDy : -unitDy),
-    // ];
+    const x_C_table = [
+      midX + height * unitDx,
+      midX + height * (dx > 0 ? unitDx : -unitDx),
+      midX + height * (dy > 0 ? unitDx : -unitDx),
+      midX + height * (-dy > 0 ? unitDx : -unitDx),
+      midX - height * (-dy < 0 ? unitDx : -unitDx),
+    ];
+    const x_Y_table = [
+      midY + height * unitDy,
+      midY + height * (dx > 0 ? unitDy : -unitDy),
+      midY + height * (dy > 0 ? unitDy : -unitDy),
+      midY + height * (-dy > 0 ? unitDy : -unitDy),
+      midY - height * (-dy < 0 ? unitDy : -unitDy),
+    ];
 
-    // const x_C = x_C_table[kochIndex];
-    // const y_C = x_Y_table[kochIndex];
+    const x_C = x_C_table[kochIndex];
+    const y_C = x_Y_table[kochIndex];
 
-    const x_C = midX + height * unitDx;
-    const y_C = midY + height * unitDy;
+    // const x_C = midX + height * unitDx;
+    // const y_C = midY + height * unitDy;
 
     this.pointC = new Point(x_C, y_C);
     return this.pointC;
